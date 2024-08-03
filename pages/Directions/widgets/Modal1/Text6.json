@@ -1,0 +1,48 @@
+{
+  "animateLoading": true,
+  "backgroundColor": "#F6F7F8",
+  "borderRadius": "0px",
+  "bottomRow": 22,
+  "boxShadow": "none",
+  "displayName": "Text",
+  "dynamicBindingPathList": [
+    {
+      "key": "isVisible"
+    }
+  ],
+  "dynamicHeight": "FIXED",
+  "dynamicPropertyPathList": [
+    {
+      "key": "isVisible"
+    }
+  ],
+  "dynamicTriggerPathList": [],
+  "fontFamily": "System Default",
+  "fontSize": "0.875rem",
+  "fontStyle": "BOLD,ITALIC",
+  "hideCard": false,
+  "iconSVG": "/static/media/icon.97c59b52.svg",
+  "isLoading": false,
+  "isVisible": "{{Map1.selectedMarker?.lat == undefined}}",
+  "key": "34zkzg72gn",
+  "labelTextSize": "0.875rem",
+  "leftColumn": 1,
+  "maxDynamicHeight": 9000,
+  "minDynamicHeight": 4,
+  "overflow": "NONE",
+  "parentColumnSpace": 17.03125,
+  "parentId": "miyhmjtuja",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "rightColumn": 16,
+  "shouldTruncate": false,
+  "text": "direction",
+  "textAlign": "CENTER",
+  "textColor": "#F86A2B",
+  "topRow": 17,
+  "truncateButtonColor": "#FFC13D",
+  "type": "TEXT_WIDGET",
+  "version": 1,
+  "widgetId": "zfhds3wck4",
+  "widgetName": "Text6"
+}

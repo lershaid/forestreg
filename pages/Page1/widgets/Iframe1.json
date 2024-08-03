@@ -1,0 +1,38 @@
+{
+  "animateLoading": true,
+  "borderOpacity": 100,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "borderWidth": 1,
+  "bottomRow": 36,
+  "boxShadow": "0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06)",
+  "dynamicBindingPathList": [
+    {
+      "key": "borderRadius"
+    }
+  ],
+  "dynamicTriggerPathList": [],
+  "flexVerticalAlignment": "start",
+  "isLoading": false,
+  "isVisible": true,
+  "key": "t6q0slkew3",
+  "leftColumn": 4,
+  "mobileBottomRow": 36,
+  "mobileLeftColumn": 4,
+  "mobileRightColumn": 28,
+  "mobileTopRow": 4,
+  "needsErrorInfo": false,
+  "parentColumnSpace": 17.9375,
+  "parentId": "0",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "responsiveBehavior": "fill",
+  "rightColumn": 61,
+  "source": "https://www.example.com",
+  "srcDoc": "<!DOCTYPE html>\n<html>\n<head>\n  <meta charset=\"utf-8\" />\n  <title>Mapbox Polygon</title>\n  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\" />\n  <script src=\"https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.js\"></script>\n  <link href=\"https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.css\" rel=\"stylesheet\" />\n  <style>\n    #map {\n      width: 100%;\n      height: 500px; /* Adjust the height as needed */\n    }\n  </style>\n</head>\n<body>\n  <div id=\"map\"></div>\n  <script>\n    // Mapbox access token\n    mapboxgl.accessToken = 'pk.eyJ1IjoibGVyc2hhaWQiLCJhIjoiY2xrdGoyYWdxMDBkYjNmcGdzZW0yeHJhciJ9.CsIyHt1RRfCKHTNPWaTcig';\n\n    // Initialize the map\n    const map = new mapboxgl.Map({\n      container: 'map', // Container ID\n      style: 'mapbox://styles/mapbox/streets-v11', // Style URL\n      center: [-74.005974, 40.712776], // Starting position [lng, lat]\n      zoom: 12 // Starting zoom\n    });\n\n    // Define the coordinates of the polygon\n    const coordinates = [\n      [-74.005974, 40.712776],\n      [-74.005974, 40.722776],\n      [-74.015974, 40.722776],\n      [-74.015974, 40.712776],\n      [-74.005974, 40.712776]\n    ];\n\n    // Add the polygon to the map\n    map.on('load', function () {\n      map.addSource('polygon', {\n        'type': 'geojson',\n        'data': {\n          'type': 'Feature',\n          'geometry': {\n            'type': 'Polygon',\n            'coordinates': [coordinates]\n          }\n        }\n      });\n\n      map.addLayer({\n        'id': 'polygon',\n        'type': 'fill',\n        'source': 'polygon',\n        'layout': {},\n        'paint': {\n          'fill-color': '#ff0000',\n          'fill-opacity': 0.5\n        }\n      });\n\n      map.addLayer({\n        'id': 'outline',\n        'type': 'line',\n        'source': 'polygon',\n        'layout': {},\n        'paint': {\n          'line-color': '#ff0000',\n          'line-width': 2\n        }\n      });\n    });\n  </script>\n</body>\n</html>\n",
+  "title": "",
+  "topRow": 4,
+  "type": "IFRAME_WIDGET",
+  "version": 1,
+  "widgetId": "repimxqtsi",
+  "widgetName": "Iframe1"
+}

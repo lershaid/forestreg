@@ -1,0 +1,23 @@
+{
+  "appIsExample": false,
+  "appLayout": {
+    "type": "DESKTOP"
+  },
+  "applicationVersion": 2,
+  "color": "#ECECEC",
+  "evaluationVersion": 2,
+  "icon": "flag",
+  "pages": [
+    {
+      "id": "Directions",
+      "isDefault": true
+    },
+    {
+      "id": "Page1",
+      "isDefault": false
+    }
+  ],
+  "unpublishedAppLayout": {
+    "type": "DESKTOP"
+  }
+}
